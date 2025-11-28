@@ -1,0 +1,1968 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: whitesmoke;
+  background-color: #222;
+}
+
+.imantarfooter {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.Titulos-secciones {
+  font-family: 'Impact', sans-serif;
+  font-size: 50px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Impact', sans-serif;
+  letter-spacing: 2px;
+  font-weight: 550;
+  font-size: 25px;
+}
+
+section {
+  text-align: center;
+}
+
+/* Header */
+header {
+  padding: 0px 20px;
+  background-color: #2b3035;
+
+}
+
+.navbar-expand-lg .navbar-collapse {
+  flex-direction: row-reverse;
+}
+
+.navbar-nav li a:hover {
+  color: rgb(179, 0, 0);
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: var(--bs-navbar-active-color);
+  font-weight: 600;
+}
+
+/* Banner */
+#banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* centra vertical */
+  align-items: center;
+  /* centra horizontal */
+  text-align: center;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/Imagenes/rock-bg.jpg) no-repeat center center / cover;
+  padding: 20px;
+}
+
+.banner-text {
+  font-size: 80px;
+}
+
+.banner-text2 {
+  font-size: 3rem;
+  padding: 2% 2%;
+}
+
+/* Sección 1 */
+#info {
+  padding: 40px 15%;
+}
+
+#info .detalles {
+  margin: 20px 0;
+}
+
+.titulo-bandas {
+  font-family: 'Impact', sans-serif;
+  font-size: 25px;
+}
+
+#info .bandas {
+  list-style: none;
+  margin: 20px 0 40px;
+}
+
+#info .bandas li {
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+/* Sección 2: Cómo llegar */
+#llegar {
+  background: #222;
+  padding: 20px 0 40px;
+}
+
+#llegar .ingresos {
+  list-style: none;
+  margin-top: 20px;
+}
+
+#llegar .ingresos li {
+  text-align: center;
+}
+
+#llegar ul {
+  margin: 20px auto;
+  max-width: 525px;
+  text-align: left;
+}
+
+.map-container {
+  position: relative;
+  width: 90%;
+  /* ocupa el 90% del ancho disponible */
+  margin: 40px auto;
+  /* centra con margen automático */
+  padding-bottom: 56.25%;
+  /* mantiene relación de aspecto 16:9 */
+  height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  /* bordes redondeados */
+}
+
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Sección 3: Contacto */
+#contacto {
+  background: #222;
+  padding: 5%;
+  color: #fff;
+}
+
+/* Columna izquierda */
+.contacto-info h3 {
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.contacto-info p {
+  margin-bottom: 10px;
+}
+
+/* .redes a {
+  color: rgb(179, 0, 0);
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.redes a:hover {
+  text-decoration: underline;
+} */
+
+/* Columna derecha (formulario) */
+.contacto-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contacto-form input,
+.contacto-form textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.form-row .form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row.full {
+  flex-direction: column;
+  align-items: center;
+}
+
+.contacto-form button {
+  align-self: center;
+  background: rgb(179, 0, 0);
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contacto-form button:hover {
+  background: rgb(179, 0, 0);
+}
+
+/* Formulario nuevo con Boostrap */
+.comentario {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-contact {
+  width: 90%;
+}
+
+.campos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.mb-3 {
+  width: 50%;
+  padding: 0 7px;
+}
+
+.mb-2 {
+  width: 25%;
+  padding: 0 7px;
+}
+
+
+.completar {
+  width: 100%;
+}
+
+.form-contact button {
+  align-self: center;
+  background: rgb(179, 0, 0);
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form-contact button:hover {
+  background: rgb(179, 0, 0);
+}
+
+.form-contact h3 {
+  margin-bottom: 20px;
+}
+
+
+/* FAQ */
+.faq ul {
+  list-style: none;
+  text-align: left;
+  margin: 0px 500px;
+}
+
+.faq li {
+  margin-bottom: 15px;
+}
+
+.contacto-container,
+.faq-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 60px 0%;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+
+.contacto-wrapper,
+.faq-columns {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  gap: 35px;
+  align-items: stretch;
+  width: 100%;
+}
+
+.contacto-info,
+.faq-column-izq {
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.contacto-form,
+.faq-column-der {
+  flex: 1 1 55%;
+}
+
+.faq-titulo {
+  font-family: 'Impact', sans-serif;
+  font-size: 33px;
+  font-weight: 500;
+  text-align: center;
+  font-size: 25px;
+}
+
+.faq-textbox {
+  display: flex;
+  padding: 25px 30px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 30px;
+  align-self: stretch;
+  background: linear-gradient(90deg, rgba(255, 255, 255, .16) 0, rgba(153, 153, 153, .2) 100%);
+  backdrop-filter: blur(12px);
+}
+
+.faq-subtitulo {
+  font-size: 17px;
+  /* font-weight: 500; */
+  margin-bottom: 0rem;
+}
+
+.faq-subtitulo,
+.faq-titulo {
+  color: var(--Gama-gray-FFFFFF, #fff);
+}
+
+.faq-boton p a,
+.faq-subtitulo,
+.faq-titulo {
+  font-style: normal;
+  line-height: normal;
+}
+
+
+.faq-cta,
+.faq-item,
+.faq-textbox {
+  border-radius: 30px;
+}
+
+.faq-subtitulo,
+.faq-titulo {
+  color: var(--Gama-gray-FFFFFF, #fff);
+}
+
+.faq-item {
+  color: #fff;
+  margin-bottom: 10px;
+  overflow: hidden;
+  transition: .3s;
+}
+
+.faq-question {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 15px 18px;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  transition: background-color .3s;
+  background: transparent;
+  border-style: unset;
+}
+
+.faq-question::after {
+  content: '+';
+  position: absolute;
+  right: 20px;
+  font-size: 18px;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 18px;
+  transition: max-height 0.4s ease, padding 0.3s;
+  font-size: 16px;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 200px;
+  /* o más si tus respuestas son largas */
+  padding: 10px 18px 15px;
+}
+
+.faq-item.active .faq-question {
+  font-weight: 700;
+  background-color: rgb(179, 0, 0);
+  border-radius: 30px 30px 0 0;
+}
+
+.faq-item.active .faq-question::after {
+  content: '-';
+}
+
+.faq-answer,
+.faq-cta,
+.faq-item {
+  background: rgba(255, 255, 255, .1);
+}
+
+.img-contacto {
+  width: 63%;
+  margin: 0 3%;
+}
+
+.org {
+  width:100%;
+}
+
+.red-faq {
+  display: inline-block;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: #2b3035;
+  border-radius: 50%;
+  margin: 0 1%;
+  transition: ease-in-out 0.5s;
+}
+
+.red-faq:hover {
+  background: rgb(179, 0, 0);
+  box-shadow: 0 0px 10px rgb(255, 0, 0);
+  transform: translateY(-4px);
+}
+
+#mensajeGracias {
+  display: none;
+  text-align: center;
+  margin-bottom: 6.8%;
+  padding: 5% 10%;
+  width: 81.417%;
+}
+
+#formularioContacto {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* Footer */
+footer {
+  background: rgb(43 48 53);
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  border-top: 1px solid #444;
+}
+
+footer img {
+  width: 30px;
+  margin: 0 5px 5px 5px;
+}
+
+.redes-footer {
+  text-decoration: none
+}
+
+footer p {
+  margin: 0;
+}
+
+#countdown {
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+#timer {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+#timer div {
+  background: #000;
+  padding: 20px;
+  border-radius: 20px;
+  min-width: 120px;
+}
+
+#timer span {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 500;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+#timer p {
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: 300;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+.tickets {
+  background-color: #000;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+  border-radius: 40px;
+  padding: 11px 21px 11px 22px;
+  transition-duration: .3s;
+  text-decoration: none;
+}
+
+.tickets:hover {
+  border-color: rgb(179, 0, 0);
+  background-color: rgb(179, 0, 0);
+
+}
+
+/* ----- Mosaico ----- */
+#mosaico {
+  padding: 0px;
+  background: #111;
+  color: #fff;
+}
+
+.mosaico {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0px;
+  /* espacio entre items */
+}
+
+.mosaico .item {
+  flex: 1 1 calc(33.333% - 20px);
+  /* 3 columnas */
+  background: #222;
+  overflow: hidden;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+/* Por ahora no quiero que tenga hover porque no lo voy a interactuar
+.mosaico .item:hover {
+  transform: scale(1.03);
+}
+  */
+
+/* imágenes */
+.mosaico .item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* texto */
+.mosaico .texto {
+  padding: 20px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Mosaico Nuevo con Boostrap*/
+.box {
+  text-align: center;
+  border-radius: 10px;
+  transition: 0.3s;
+  background-color: rgb(34, 34, 34);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-5px);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.container,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+  max-width: 1800px;
+}
+
+.text-center {
+  padding-bottom: 20px;
+}
+
+#grilla {
+  margin-bottom: 3rem;
+}
+
+/* Mosaico nuevo */
+
+.grillanueva {
+  /* 4- aplicar propiedades de grid */
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* 5- Que espacios necesito en cada columna? */
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  /* 6- Que espacios necesito en cada fila? */
+  grid-template-areas:
+    " Imagen-1    Texto-1  Imagen-2  "
+    " Texto-2     Imagen-3   Texto-3 "
+    " Imagen-4    Texto-4  Imagen-5 "
+    " Texto-5     Imagen-6   Texto-6 "
+  ;
+}
+
+article {
+  border-radius: 10px;
+  text-align: center;
+}
+
+.subtitulo {
+  margin-top: 0.6rem;
+}
+
+/* .tarjeta {
+  transition: 0.3s;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
+    url(/Imagenes/Fondo\ Grunge.jpg) no-repeat center center / cover;
+  min-height: 400px;
+}
+
+.tarjeta:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0.2)),
+    url(/Imagenes/Fondo\ Grunge.jpg) no-repeat center center / cover;
+  transform: translateY(-5px);
+} */
+
+/* Tarjeta base (sin animación) */
+.tarjeta {
+  position: relative;
+  overflow: hidden;
+  min-height: 400px;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Tarjeta base */
+.tarjeta {
+  position: relative;
+  overflow: hidden;
+  min-height: 400px;
+  background-size: cover;
+  background-position: center;
+}
+
+/*Fondo para las tarjetas de TEXTO */
+.tarjeta-animada {
+  /* Volvemos a colocar el fondo grunge original */
+  background: url("/Imagenes/Fondo Grunge.jpg") no-repeat center center / cover;
+  transition: transform 0.3s ease;
+}
+
+/* Capa del gradiente solo para tarjetas animadas */
+.tarjeta-animada::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.5));
+  transition: opacity 0.5s ease-in-out;
+  opacity: 1;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Elevar contenido */
+.tarjeta-animada>* {
+  position: relative;
+  z-index: 1;
+}
+
+/* Hover solo en las animadas */
+.tarjeta-animada:hover {
+  transform: translateY(-5px);
+}
+
+.tarjeta-animada:hover::before {
+  opacity: 0.4;
+  background: linear-gradient(rgba(0, 0, 0, 0.8),
+      rgba(255, 255, 255, 0.2));
+}
+
+/* Todas las tarjetas con ID Imagen-* */
+[id^="Imagen"] {
+  background-size: cover;
+  background-position: center;
+  transition: background-position 0.5s ease-in-out;
+}
+
+/* Hover: animación real */
+[id^="Imagen"]:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+}
+
+
+.box-text {
+  padding: 20px;
+  background-color: rgb(34, 34, 34);
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#Imagen-1 {
+  grid-area: Imagen-1;
+  background-image: url(/Imagenes/Recital\ 1.jpg);
+  background-size: cover;
+  background-position: 10% 10%;
+}
+
+#Texto-1 {
+  grid-area: Texto-1;
+}
+
+#Imagen-2 {
+  grid-area: Imagen-2;
+  background-image: url(/Imagenes/Recital\ 2.jpg);
+  background-size: cover;
+  background-position: 66% 10%;
+}
+
+#Texto-2 {
+  grid-area: Texto-2;
+}
+
+#Imagen-3 {
+  grid-area: Imagen-3;
+  background-image: url(/Imagenes/Recital\ 3-3.jpg);
+  background-size: cover;
+  background-position: 31% 10%;
+}
+
+#Texto-3 {
+  grid-area: Texto-3;
+}
+
+#Imagen-4 {
+  grid-area: Imagen-4;
+  background-image: url(/Imagenes/Recital\ 4.jpg);
+  background-size: cover;
+  background-position: 51% 10%;
+}
+
+#Texto-4 {
+  grid-area: Texto-4;
+}
+
+#Imagen-5 {
+  grid-area: Imagen-5;
+  background-image: url(/Imagenes/Recital\ 5.jpg);
+  background-size: cover;
+  background-position: 10% 10%;
+}
+
+#Texto-5 {
+  grid-area: Texto-5;
+}
+
+#Imagen-6 {
+  grid-area: Imagen-6;
+  background-image: url(/Imagenes/Recital\ 6.jpg);
+  background-size: cover;
+  background-position: 94% 10%;
+}
+
+#Texto-6 {
+  grid-area: Texto-6;
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* Auspiciantes */
+body {
+  background-color: #222;
+}
+
+.Titulos-auspiciantes {
+  font-family: 'Impact', sans-serif;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.mifade {
+  position: absolute;
+  background: linear-gradient(90deg, rgba(34, 34, 34, 1) 10%, rgba(34, 34, 34, 0) 50%, rgba(34, 34, 34, 1) 90%);
+  inset: 0;
+  pointer-events: none;
+}
+
+.carousel {
+  margin: 20px auto 35px;
+  width: 90%;
+  display: flex;
+  overflow-x: auto;
+  gap: 1em;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.grupo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  animation: spin 50s infinite linear;
+  padding-right: 1em;
+}
+
+.carta {
+  flex: 0 0 5em;
+  /* height: 5em; */
+  padding: 0.5em 0.8em;
+  font-size: 3rem;
+  border-radius: .2em;
+  text-align: center;
+  align-content: center;
+}
+
+@keyframes spin {
+  from {
+    translate: 0;
+  }
+
+  to {
+    translate: -100%;
+  }
+}
+
+/* Compra de entradas */
+.compra-entradas {
+  padding: 5% 18%;
+}
+
+.opciones-entradas {
+  width: 64%;
+  margin-top: 40px;
+}
+
+.form-select {
+  margin-bottom: 8px;
+  padding: 1rem 2.25rem 1rem 1.1rem;
+}
+
+.tiposdedoc {
+  padding: .375rem .75rem;
+}
+
+/* Nuevos estilos de comprar entradas */
+
+/* .step {
+  display: none;
+} */
+
+.step.active {
+  display: block;
+}
+
+.ticket-row {
+  padding: 18px;
+  border-bottom: 1px solid rgba(255, 255, 255, .16);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0, rgba(153, 153, 153, 0.2) 100%)
+}
+
+.ticket-title {
+  font-weight: 400;
+}
+
+.price {
+  font-weight: 600;
+}
+
+.counter-btn {
+  width: 35px;
+  height: 35px;
+  border: 1px solid #bbb;
+  background: white;
+  border-radius: 6px;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.qty-box {
+  width: 40px;
+  text-align: center;
+  display: inline-block;
+}
+
+.summary-box {
+  background: linear-gradient(90deg, rgba(255, 255, 255, .16) 0, rgba(153, 153, 153, .2) 100%);
+  padding: 22px;
+  border-radius: 6px;
+}
+
+.accordion-button {
+  background-color: #4c4c4c;
+  color: #fff;
+}
+
+.accordion-item {
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, .40)
+}
+
+.accordion-button:not(.collapsed) {
+  color: #fff;
+  background: #910303;
+  font-weight: 600;
+}
+
+.accordion-button::after {
+  filter: invert(1);
+}
+
+.next-btn,
+.back-btn,
+.confirm-btn {
+  background: rgb(83, 42, 42);
+  color: white;
+  padding: 12px 26px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+#toStep2:not([disabled]),
+#Confirmar:not([disabled]) {
+  background: rgb(179, 0, 0);
+}
+
+.back-btn {
+  background: gray;
+}
+
+.form-check {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+
+.col-12 {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* Confirmación de compra */
+.checkeado {
+  width: 35%;
+}
+
+.conf-compra {
+  background-color: #b0ef8f;
+  display: flex;
+  color: #000;
+  gap: 63px;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 6rem;
+  border-radius: 35px;
+}
+
+.fecha-hora {
+  display: flex;
+
+}
+
+.cont-conf-compra {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6% 0 0 0;
+}
+
+.Gracias {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.ncompra {
+  margin-bottom: 0px;
+}
+
+.pie {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.mgracias {
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+.mensaje-gracias {
+  font-size: 1.5rem;
+}
+
+.alt-confcompra {
+  min-height: 81.5vh;
+}
+
+/* Animaciones */
+
+.animacion-texto {
+  -webkit-animation: focus-in-contract-bck 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: focus-in-contract-bck 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes focus-in-contract-bck {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(300px);
+    transform: translateZ(300px);
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateZ(12px);
+    transform: translateZ(12px);
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+@keyframes focus-in-contract-bck {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(300px);
+    transform: translateZ(300px);
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateZ(12px);
+    transform: translateZ(12px);
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+/* Tablet */
+@media (923px<=width<1200px) {
+  .grillanueva {
+    /* 4- aplicar propiedades de grid */
+    padding: 0 10px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* 5- Que espacios necesito en cada columna? */
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    /* 6- Que espacios necesito en cada fila? */
+    grid-template-areas:
+      " Imagen-1    Imagen-1   Imagen-2  "
+      " Imagen-1    Imagen-1    Texto-1 "
+      " Texto-2    Imagen-3   Imagen-3 "
+      " Texto-3   Imagen-3   Imagen-3 "
+      " Imagen-4    Imagen-4   Imagen-5  "
+      " Imagen-4    Imagen-4    Texto-4 "
+      " Texto-5    Imagen-6   Imagen-6 "
+      " Texto-6   Imagen-6    Imagen-6  "
+    ;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  #Imagen-1 {
+    grid-area: Imagen-1;
+    background-image: url(/Imagenes/Recital\ 1.jpg);
+    background-size: cover;
+    background-position: 53% 10%;
+  }
+
+  #Imagen-2 {
+    grid-area: Imagen-2;
+    background-image: url(/Imagenes/Recital\ 2.jpg);
+    background-size: cover;
+    background-position: 66% 10%;
+  }
+
+  #Imagen-3 {
+    grid-area: Imagen-3;
+    background-image: url(/Imagenes/Recital\ 3-3.jpg);
+    background-size: cover;
+    background-position: 31% 10%;
+  }
+
+  #Imagen-4 {
+    grid-area: Imagen-4;
+    background-image: url(/Imagenes/Recital\ 4.jpg);
+    background-size: cover;
+    background-position: 51% 10%;
+  }
+
+  #Imagen-5 {
+    grid-area: Imagen-5;
+    background-image: url(/Imagenes/Recital\ 5.jpg);
+    background-size: cover;
+    background-position: 10% 10%;
+  }
+
+  #Imagen-6 {
+    grid-area: Imagen-6;
+    background-image: url(/Imagenes/Recital\ 6.jpg);
+    background-size: cover;
+    background-position: 94% 10%;
+  }
+
+  .tarjeta {
+    min-height: 235px;
+  }
+
+  .contacto-container,
+  .faq-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 60px 0%;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+  }
+
+  .comentario {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cont-conf-compra {
+    padding: 6% 5% 0 5%;
+  }
+
+  #banner {
+    height: 95vh;
+  }
+
+  .banner-text2 {
+    font-size: 2.5rem;
+    padding: 2% 30px 30px;
+  }
+
+  .ticket-title {
+    font-weight: 400;
+    font-size: 0.8rem;
+  }
+
+  .price {
+    font-weight: 600;
+    font-size: 0.8rem;
+  }
+}
+
+@media (768px<=width<923px) {
+  .grillanueva {
+    /* 4- aplicar propiedades de grid */
+    padding: 0 10px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* 5- Que espacios necesito en cada columna? */
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    /* 6- Que espacios necesito en cada fila? */
+    grid-template-areas:
+      " Imagen-1    Imagen-1   Imagen-2  "
+      " Imagen-1    Imagen-1    Texto-1 "
+      " Texto-2    Imagen-3   Imagen-3 "
+      " Texto-3   Imagen-3   Imagen-3 "
+      " Imagen-4    Imagen-4   Imagen-5  "
+      " Imagen-4    Imagen-4    Texto-4 "
+      " Texto-5    Imagen-6   Imagen-6 "
+      " Texto-6   Imagen-6    Imagen-6  "
+    ;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  #Imagen-1 {
+    grid-area: Imagen-1;
+    background-image: url(/Imagenes/Recital\ 1.jpg);
+    background-size: cover;
+    background-position: 53% 10%;
+  }
+
+  #Imagen-2 {
+    grid-area: Imagen-2;
+    background-image: url(/Imagenes/Recital\ 2.jpg);
+    background-size: cover;
+    background-position: 66% 10%;
+  }
+
+  #Imagen-3 {
+    grid-area: Imagen-3;
+    background-image: url(/Imagenes/Recital\ 3-3.jpg);
+    background-size: cover;
+    background-position: 31% 10%;
+  }
+
+  #Imagen-4 {
+    grid-area: Imagen-4;
+    background-image: url(/Imagenes/Recital\ 4.jpg);
+    background-size: cover;
+    background-position: 51% 10%;
+  }
+
+  #Imagen-5 {
+    grid-area: Imagen-5;
+    background-image: url(/Imagenes/Recital\ 5.jpg);
+    background-size: cover;
+    background-position: 10% 10%;
+  }
+
+  #Imagen-6 {
+    grid-area: Imagen-6;
+    background-image: url(/Imagenes/Recital\ 6.jpg);
+    background-size: cover;
+    background-position: 94% 10%;
+  }
+
+  .tarjeta {
+    min-height: 235px;
+  }
+
+  .banner-text {
+    font-size: 75px;
+  }
+
+  .banner-text2 {
+    font-size: 37px;
+    padding-bottom: 30px;
+  }
+
+  .contacto-container,
+  .faq-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 60px 0%;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+  }
+
+  .faq-question {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 15px 18px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    transition: background-color .3s;
+    background: transparent;
+    border-style: unset;
+    justify-content: flex-start;
+  }
+
+  .faq-question::after {
+    content: '+';
+    position: absolute;
+    right: 17px;
+    font-size: 18px;
+  }
+
+  .faq-subtitulo {
+    font-size: 15px;
+    margin-bottom: 0rem;
+  }
+
+  .faq-titulo {
+    margin-bottom: 0rem;
+  }
+
+  .form-contact {
+    width: 100%;
+  }
+
+  .form-control {
+    font-size: 0.9rem;
+  }
+
+  .compra-entradas {
+    padding: 5%;
+  }
+}
+
+/* Mobile */
+@media (576px<=width<768px) {
+  .grillanueva {
+    /* 4- aplicar propiedades de grid */
+    padding: 0 10px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr;
+    /* 5- Que espacios necesito en cada columna? */
+    grid-template-rows: 1fr 0.3fr 1fr 0.3fr 1fr 0.3fr 1fr 0.3fr 1fr 0.3fr 1fr 0.3fr;
+    /* 6- Que espacios necesito en cada fila? */
+    grid-template-areas:
+      " Imagen-1 "
+      " Texto-1 "
+      " Imagen-2 "
+      " Texto-2 "
+      " Imagen-3 "
+      " Texto-3 "
+      " Imagen-4 "
+      " Texto-4 "
+      " Imagen-5 "
+      " Texto-5 "
+      " Imagen-6 "
+      " Texto-6 "
+    ;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  #Imagen-1 {
+    grid-area: Imagen-1;
+    background-image: url(/Imagenes/Recital\ 1.jpg);
+    background-size: cover;
+    background-position: 53% 10%;
+    height: 400px;
+  }
+
+  #Imagen-2 {
+    grid-area: Imagen-2;
+    background-image: url(/Imagenes/Recital\ 2.jpg);
+    background-size: cover;
+    background-position: 66% 10%;
+  }
+
+  #Imagen-3 {
+    grid-area: Imagen-3;
+    background-image: url(/Imagenes/Recital\ 3-3.jpg);
+    background-size: cover;
+    background-position: 31% 10%;
+  }
+
+  #Imagen-4 {
+    grid-area: Imagen-4;
+    background-image: url(/Imagenes/Recital\ 4.jpg);
+    background-size: cover;
+    background-position: 51% 10%;
+  }
+
+  #Imagen-5 {
+    grid-area: Imagen-5;
+    background-image: url(/Imagenes/Recital\ 5.jpg);
+    background-size: cover;
+    background-position: 10% 10%;
+  }
+
+  #Imagen-6 {
+    grid-area: Imagen-6;
+    background-image: url(/Imagenes/Recital\ 6.jpg);
+    background-size: cover;
+    background-position: 94% 10%;
+  }
+
+  .tarjeta {
+    min-height: 145px;
+  }
+
+  .banner-text {
+    font-size: 54px;
+  }
+
+  .banner-text2 {
+    font-size: 34px;
+    padding-bottom: 30px;
+  }
+
+  #countdown {
+    color: #fff;
+    text-align: center;
+    padding: 40px 14px;
+  }
+
+  #timer {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 0px;
+    flex-wrap: wrap;
+  }
+
+  #timer div {
+    background: #000;
+    padding: 15px;
+    border-radius: 20px;
+    min-width: 100px;
+  }
+
+  #timer span {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 500;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: -0.5px;
+  }
+
+  #timer p {
+    margin-top: 0px;
+    margin-bottom: 1px;
+    font-size: 1rem;
+    font-weight: 300;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+  }
+
+  .contacto-container,
+  .faq-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 60px 0%;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+  }
+
+  .form-contact {
+    width: 100%;
+  }
+
+  .contacto-info,
+  .faq-column-izq {
+    flex: 1 1 53%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .faq-question {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 15px 18px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    transition: background-color .3s;
+    background: transparent;
+    border-style: unset;
+    justify-content: flex-start;
+  }
+
+  .faq-question::after {
+    content: '+';
+    position: absolute;
+    right: 17px;
+    font-size: 18px;
+  }
+
+  .faq-subtitulo {
+    font-size: 15px;
+    margin-bottom: 0rem;
+  }
+
+  .faq-titulo {
+    margin-bottom: 0rem;
+  }
+
+  .form-contact {
+    width: 90%;
+  }
+
+  .contacto-wrapper,
+  .faq-columns {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 35px;
+    align-content: center;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .carta {
+    flex: 0 0 4em;
+    padding: 0.5em 0.8em;
+    font-size: 3rem;
+    border-radius: .2em;
+    text-align: center;
+    align-content: center;
+  }
+
+  .grupo {
+    gap: 0em;
+  }
+
+  .form-control {
+    font-size: 0.9rem;
+  }
+
+}
+
+@media (width<576px) {
+  .grillanueva {
+    /* 4- aplicar propiedades de grid */
+    padding: 0 10px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr;
+    /* 5- Que espacios necesito en cada columna? */
+    grid-template-rows: 1fr 0.5fr 1fr 0.5fr 1fr 0.5fr 1fr 0.5fr 1fr 0.5fr 1fr 0.5fr;
+    /* 6- Que espacios necesito en cada fila? */
+    grid-template-areas:
+      " Imagen-1 "
+      " Texto-1 "
+      " Imagen-2 "
+      " Texto-2 "
+      " Imagen-3 "
+      " Texto-3 "
+      " Imagen-4 "
+      " Texto-4 "
+      " Imagen-5 "
+      " Texto-5 "
+      " Imagen-6 "
+      " Texto-6 "
+    ;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+
+  .Titulos-secciones {
+    font-family: 'Impact', sans-serif;
+    font-size: 40px;
+  }
+
+  #info {
+    padding: 40px 15%;
+  }
+
+  #info .bandas {
+    list-style: none;
+    margin: 20px 0px 0px;
+  }
+
+  .titulo-bandas ul {
+    padding-left: 0rem;
+  }
+
+  #Imagen-1 {
+    grid-area: Imagen-1;
+    background-image: url(/Imagenes/Recital\ 1.jpg);
+    background-size: cover;
+    background-position: 53% 10%;
+    height: 400px;
+  }
+
+  #Imagen-2 {
+    grid-area: Imagen-2;
+    background-image: url(/Imagenes/Recital\ 2.jpg);
+    background-size: cover;
+    background-position: 66% 10%;
+  }
+
+  #Imagen-3 {
+    grid-area: Imagen-3;
+    background-image: url(/Imagenes/Recital\ 3-3.jpg);
+    background-size: cover;
+    background-position: 31% 10%;
+  }
+
+  #Imagen-4 {
+    grid-area: Imagen-4;
+    background-image: url(/Imagenes/Recital\ 4.jpg);
+    background-size: cover;
+    background-position: 51% 10%;
+  }
+
+  #Imagen-5 {
+    grid-area: Imagen-5;
+    background-image: url(/Imagenes/Recital\ 5.jpg);
+    background-size: cover;
+    background-position: 10% 10%;
+  }
+
+  #Imagen-6 {
+    grid-area: Imagen-6;
+    background-image: url(/Imagenes/Recital\ 6.jpg);
+    background-size: cover;
+    background-position: 94% 10%;
+  }
+
+  .tarjeta {
+    min-height: 235px;
+  }
+
+  .banner-text {
+    font-size: 32px;
+  }
+
+  .banner-text2 {
+    font-size: 19px;
+    padding-bottom: 30px;
+  }
+
+  #countdown {
+    color: #fff;
+    text-align: center;
+    padding: 40px 14px;
+  }
+
+  #timer {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 0px;
+    flex-wrap: wrap;
+  }
+
+  #timer div {
+    background: #000;
+    padding: 10px;
+    border-radius: 20px;
+    min-width: 63px;
+  }
+
+  #timer span {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: -0.5px;
+  }
+
+  #timer p {
+    margin-top: 0px;
+    margin-bottom: 1px;
+    font-size: 0.76rem;
+    font-weight: 300;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+  }
+
+  .carta {
+    flex: 0 0 3em;
+    padding: 0.4em 0.2em;
+    font-size: 3rem;
+    border-radius: .2em;
+    text-align: center;
+    align-content: center;
+  }
+
+  .grupo {
+    gap: 0em;
+  }
+
+  .carousel {
+    margin: 20px auto 35px;
+    width: 90%;
+    display: flex;
+    overflow-x: auto;
+    gap: 0em;
+  }
+
+  .contacto-container,
+  .faq-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 40px 0% 13px;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+  }
+
+  .form-contact {
+    width: 100%;
+  }
+
+  .contacto-info,
+  .faq-column-izq {
+    flex: 1 1 53%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .faq-question {
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 15px 18px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    transition: background-color .3s;
+    background: transparent;
+    border-style: unset;
+    justify-content: flex-start;
+  }
+
+  .faq-question::after {
+    content: '+';
+    position: absolute;
+    right: 17px;
+    font-size: 18px;
+  }
+
+  .faq-subtitulo {
+    font-size: 0.8rem;
+    margin-bottom: 0rem;
+  }
+
+  .faq-titulo {
+    margin-bottom: 0rem;
+  }
+
+  .form-contact {
+    width: 90%;
+  }
+
+  .contacto-wrapper,
+  .faq-columns {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 50px;
+    align-content: center;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .compra-entradas {
+    padding: 5%;
+    margin-bottom: 6%;
+  }
+
+  #banner {
+    height: 64vh;
+  }
+
+  .Titulos-secciones {
+    font-size: 30px;
+    margin: 5%;
+  }
+
+  img {
+    width: 70%;
+  }
+
+  ol, ul {
+    padding-left: 0rem;
+  }
+
+  .bandas {
+    font-size: 0.8rem;
+  }
+
+  .Titulos-auspiciantes {
+    font-size: 1.5rem;
+  }
+
+  #llegar ul {
+    margin: 20px auto;
+    max-width: 80%;
+    text-align: center;
+    font-size: 0.7rem;
+    list-style: none;
+  }
+
+  .estadio {
+    font-size: 0.7rem;
+    max-width: 80%;
+    text-align: center;
+    margin: 0 auto 20px;
+  }
+
+  .comentario {
+    width: 120%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-control {
+    font-size: 0.8rem;
+  }
+
+  .campos {
+    font-size: 0.9rem;
+  }
+
+  .faq-answer {
+    font-size: 0.8rem;
+  }
+
+  .form-select {
+    font-size: 0.8rem;
+  }
+
+  .form-check-label {
+    font-size: 0.9rem;
+  }
+
+  h3 {
+    margin-bottom: 1.5rem;
+  }
+
+  .mgracias {
+    font-weight: 800;
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .mensaje-gracias {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .Gracias {
+    font-weight: 700;
+    font-size: 0.9rem;
+  }
+
+  .conf-compra {
+    background-color: #b0ef8f;
+    display: flex;
+    color: #000;
+    gap: 26px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 2rem;
+    border-radius: 35px;
+    margin: 10px 9%;
+  }
+
+  .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+    font-size: 0.9rem;
+  }
+
+  .ticket-title {
+    font-weight: 400;
+    font-size: 0.8rem;
+    text-align: left;
+  }
+
+  .price {
+    font-weight: 600;
+    font-size: 0.8rem;
+  }
+
+  .qty-box {
+    width: 40px;
+    text-align: center;
+    display: inline-block;
+    font-size: 0.8rem;
+  }
+
+  .counter-btn {
+    font-size: 1rem;
+  }
+}
